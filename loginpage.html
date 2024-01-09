@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Page</title>
+    </head>
+    <body class="page5">
+    <div class="login-container">
+        <img src="media/picture1 (1).png" class="feature-img">
+        <h2>Login</h2>
+            <input type="text" class="login-input name" placeholder="Username" required>
+            <input type="password" class="login-input pass" placeholder="Password" required>
+            <button type="submit" onclick="login()" class="login-button">Login</button>
+    </div>
+    <script>
+        function login() {
+  const loginContainer = document.querySelector('.login-container');
+  const musicPlayerContainer = document.querySelector('.box-1');
+  const username = document.querySelector('.name').value;
+  const password = document.querySelector('.pass').value;
+  
+
+  if (username == 'kelompok 3' && password == 'kelompok3jaya') {
+
+    alert('Login Berhasil');
+      window.location.href ="halamanke4.html";
+      // loginContainer.style.display = 'none';
+      // musicPlayerContainer.style.display = 'flex';
+  } else {
+      alert('Login gagal, silahkan cek kembali username dan password Anda dengan teliti!');
+  }
+}
+    </script>
+    </body>
+
+</html>

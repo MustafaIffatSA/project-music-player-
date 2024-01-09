@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+    <title>Music Player</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page1">
+    <img src="media/picture1 (1).png" class="feature-img" />
+    <nav>
+        <img src="media/logo (2).png" class="logo" />
+        <ul>
+            <li><a href="playlist.html">Daftar Lagu</a></li>
+            <li><a href="contuc.html">Contact Us</a></li>
+            <li><a href="myplaylist.html">My Playlist</a></li>
+            <li><a href="loginpage.html">Log out</a></li>
+        </ul>
+    </nav>
+
+    <div class="music-player">
+        <div class="album">
+            <div class="gambar">
+                <img id="img-song" alt="" srcset="" />
+            </div>
+            <div class="music-details">
+                <h1 id="penyanyi">wave to earth</h1>
+                <h3 id="nameSong">wave to earth</h3>
+            </div>
+            <div class="music">
+                <audio id="audioPlayer" controls>
+                    <source id="audioPlayer" class="song" />
+                </audio>
+            </div>
+            <div class="controls">
+                <button onclick="prevBtn()">
+                    <span class="material-symbols-outlined">
+                        skip_previous
+                    </span>
+                </button>
+                <button id="playPauseBtn">
+                    <span class="material-symbols-outlined">
+                        play_arrow
+                    </span>
+                </button>
+                <button onclick="nextBtn()">
+                    <span class="material-symbols-outlined">
+                        skip_next
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

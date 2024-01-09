@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>playlist</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/be5705d6c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <style>
+    .p1 {
+      position: absolute;
+      right: 100px;
+      top: 100px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    small {
+      padding-left: 10px;
+      padding-top: 2px;
+    }
+
+    .col span {
+      padding-right: 20px;
+    }
+
+    .fa-play {
+      padding-right: 200px;
+    }
+  </style>
+  <body class="page1">
+    <div class="navbar">
+      <a href="halamanke4.html"><i class="fa-solid fa-angle-left"></i></a>
+      <a href="#news">Daftar Lagu</a>
+    </div>
+    <div class="main"></div>
+    <!--baris satu-->
+    <div onclick="listLagu(0)" class="row">
+      <div class="col h3">
+        01 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>Seasons</div>
+        <small> Wave To Earth</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+
+    <!--baris satu-->
+    <div onclick="listLagu(1)" class="row">
+      <div class="col h3">
+        02 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>Light</div>
+        <small>Wave To Earth</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+
+    <!--baris satu-->
+    <div onclick="listLagu(2)" class="row">
+      <div class="col h3">
+        03 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>Bad</div>
+        <small>Wave To Earth</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+    <!--baris satu-->
+    <div onclick="listLagu(3)" class="row">
+      <div class="col h3">
+        04 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>History</div>
+        <small>Rich Brian</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+    <!--baris satu-->
+    <div onclick="listLagu(4)" class="row">
+      <div class="col h3">
+        05 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>100degrees</div>
+        <small>Rich Brian</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+    <!--baris satu-->
+    <div onclick="listLagu(5)" class="row">
+      <div class="col h3">
+        06 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>Glow like dat</div>
+        <small>Rich Brian</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+    <!--baris satu-->
+    <div onclick="listLagu(6)" class="row">
+      <div class="col h3">
+        07 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>It never ends</div>
+        <small>Bring Me The Horizon</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+    <!--baris satu-->
+    <div onclick="listLagu(7)" class="row">
+      <div class="col h3">
+        08 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>The House of Wolves</div>
+        <small>Bring Me The Horizon</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+    <div onclick="listLagu(8)" class="row">
+      <div class="col h3">
+        09 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>Midsummer Madness</div>
+        <small>Rich Brian</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+    <!--baris satu-->
+    <div onclick="listLagu(9)" class="row">
+      <div class="col h3">
+        10 <span></span>
+        <i class="fa-solid fa-music" style="margin-right: 10px;"></i>
+        <div>Scott Street</div>
+        <small>Phoebe Bridgers</small>
+      </div>
+      <div class="col">
+        <i
+          class="fa-solid fa-play"
+          style="margin-left: 10px; font-size: medium;"
+        ></i>
+      </div>
+    </div>
+
+    <!-- kotak musik -->
+    <div class="music-player p1">
+      <div class="album">
+        <div class="gambar">
+          <img id="img-song" alt="" srcset="" />
+        </div>
+        <div class="music-details">
+          <h1 id="penyanyi">wave to earth</h1>
+          <h3 id="nameSong">wave to earth</h3>
+        </div>
+        <div class="music">
+          <audio id="audioPlayer" controls>
+            <source id="audioPlayer" class="song" />
+          </audio>
+        </div>
+        <div class="controls">
+          <button onclick="prevBtn()">
+            <span class="material-symbols-outlined">
+              skip_previous
+            </span>
+          </button>
+          <button id="playPauseBtn">
+            <span class="material-symbols-outlined">
+              play_arrow
+            </span>
+          </button>
+          <button onclick="nextBtn()">
+            <span class="material-symbols-outlined">
+              skip_next
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

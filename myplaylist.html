@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contuc</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/be5705d6c0.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar {
+            position: relative;
+        }
+
+
+
+
+        h1 {
+            color: white;
+        }
+
+        main {
+            background-color: #000e28;
+            overflow: hidden;
+            margin: 0;
+            padding: 30px;
+            height: 100vh;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+       
+        .myplaylist {
+            display: flex;
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin-top: 70px;
+            flex-wrap: wrap;
+        }
+
+
+        .detil {
+            width: 100%;
+            height: 30%;
+            background-color: #000000;
+            padding: 5px 15px;
+        }
+
+        .detil h3 {
+            color: white;
+        }
+
+        .play-button{
+            position: absolute;
+            opacity: 0;
+
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: #000e28;
+            color: yellow;
+
+            margin-bottom: 130px;
+            margin-left: 70px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-duration: .1s;
+            transition-timing-function: ease-in;
+        }
+        
+        .card:hover > .play-button{
+            opacity: 1;
+        }
+
+        .singer {
+            color: gray;
+        }
+
+        .card {
+            width: 190px;
+            height: 254px;
+            border-radius: 5px;
+            background: #212121;
+            display: flex;
+            align-items: end;
+            margin: 30px;
+            cursor: pointer;
+        }
+
+        /* card design */
+        .c1 {
+            background-image: url(thelight.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .c2 {
+            background-image: url(1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -50px;
+        }
+
+        .c3 {
+            background-image: url(2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -100px;
+
+        }
+        .c4 {
+            background-image: url(3.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -150px;
+
+        }
+        .c5 {
+            background-image: url(4.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -150px;
+
+        }
+        .c6 {
+            background-image: url(5.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -100px;
+
+        }
+        .c7 {
+            background-image: url(6.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -80px;
+
+        }
+    </style>
+
+<body>
+    <div class="navbar">
+        <a href="halamanke4.html"><i class="fa-solid fa-angle-left"></i></a>
+        <a href="#news">Contact Us</a>
+    </div>
+    <main>
+        <h1>My Playlist</h1>
+        
+        <!-- card playlist -->
+        <div class="myplaylist">
+
+            <div class="card c1">
+                <div class="detil">
+                    <h3>sky</h3><br>
+                    <p class="singer">NIKI</p>
+                </div>
+                <div class="play-button">▶</div>
+            </div>
+
+            <div class="card c2">
+                <div class="detil">
+                    <h3>Sad Songs</h3><br>
+                    <p class="singer">Boa</p>
+                </div>
+                <div class="play-button">▶</div>
+            </div>
+
+            <div class="card c3">
+                <div class="detil">
+                    <h3>Hindi</h3><br>
+                    <p class="singer">Hindia</p>
+                </div>
+                <div class="play-button">▶</div>
+            </div>
+
+            <div class="card c4">
+                <div class="detil">
+                    <h3>Summer</h3><br>
+                    <p class="singer">88RISHING</p>
+                </div>
+                <div class="play-button">▶</div>
+            </div>
+
+            <div class="card c5">
+                <div class="detil">
+                    <h3>Booster</h3><br>
+                    <p class="singer">Coldplay, Joji</p>
+                </div>
+                <div class="play-button">▶</div>
+            </div>
+
+            <div class="card c6">
+                <div class="detil">
+                    <h3>Sky</h3><br>
+                    <p class="singer">Sia</p>
+                </div>
+                <div class="play-button">▶</div>
+            </div>
+
+            <div class="card c7">
+                <div class="detil">
+                    <h3>Only u</h3><br>
+                    <p class="singer">Bruno Mars</p>
+                </div>
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+    </main>
+    <script>
+        let card1 = document.querySelector(".c1");
+        card1.addEventListener("click", function () {
+            window.location.href ="playlist.html";
+        })
+    </script>
+</body>
+
+</html>
